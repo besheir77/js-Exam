@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black ">
+    <nav class="position-fixed top-0 px-3     bg-black  bottom-0">
+        
+        <ul class="list-unstyled overflow-hidden ms-3 mt-4 me-3 ">
+            <li >
+                Search
+            </li>
+            <li class="categories">
+                Categories
+            </li>
+            <li id="Area">
+                Area
+            </li>
+            <li id="Ingredients">
+                Ingredients
+            </li>
+            <li >
+                Contact-Us
+            </li>
+      
+        </ul>
+     
+    <footer class="position-absolute bottom-0  mb-3">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-globe"></i>
+        <p>Copyright Â© 2019 All Rights
+            Reserved.</p>
+    </footer>
+    </nav>
+    <div class="open-close position-fixed top-0  bottom-0  bg-white">
+        <img src="img/logo.png"   alt="logo">
+        <i class="fa-solid fa-xmark d-none position-absolute top-50 translate-middle  start-50    text-black"></i>
+        <i class="fa-solid fa-bars position-absolute top-50 translate-middle  start-50    text-black"></i>
+        <div class="icons text-black fs-5  position-absolute bottom-0 translate-middle-x mb-5   start-50">
+            <a href=""><i class="fa-solid my-3 fa-globe d-block "></i></a>
+            <a href=""><i class="fa-solid fa-share-nodes"></i></a>
+        </div>
+      
+    </div>
+    <div class=" loadingsec position-fixed end-0 start-0 top-0 bottom-0 align-items-center justify-content-center bg-black position-relative vh-100">
+    <span class="loader "></span>
+</div>
+<main class="d-none">
+    <section class="home d-none">
+        <div class="container mt-5">
+            <div class="row display gy-3 mb-5">
+            
+            </div>
+        </div>
+    </section>
+    <section id="Categorie" class="container Categorie my-5 d-none ">
+        <div class="row gy-3 displayCategorie ">
+       
+            <div class=" loadingsec align-items-center justify-content-center bg-black position-relative vh-100">
+                <span class="loader "></span>
+        </div>
+</section>
+    <section class=" ">
+    <section class="container mt-5 Search d-none">
+        <div class="row mb-5">
+            <div class="col-md-6 ">
+                <div>
+                    <input type="text" class="w-100 mb-3 mx-auto byName  form-control" placeholder="Search By Name" name="name">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <input type="text" class="w-100  byFirstLetter mx-auto  form-control" placeholder="Search By First Letter" name="name">
+                </div>
+            </div>
+        </div>
+        <div class="row display gy-3 mb-5">
+            
+        </div>
+    </section>
+    <section class="container meal my-5  d-none">
+        <div class="row displaymeal">
+        
+
+        </div>
+    </section>
+
+</section>
+<section class="Categories section d-none">
+    <section class="container meal my-5 ">
+        <div class="row gy-3 display">
+     
+        </div>
+    </section>
+
+</section>
+<section class="Area">
+    <section class=" my-5">
+        <div class="container">
+            <div class="row gy-3 displayLocation">
+            
+      </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+        <div class="row gy-3 AreaDisplay">
+    
+    </div>
+    </div>
+    </section>
+</section>
+<section class="Ingredients ">
+    <section class="mt-5">
+        <div class="container my-5">
+            <div class="row gy-3 displayIngredients">
+                
+      </div>
+        </div>
+    </section>
+</section>
+<section class="Contact-Us d-none">
+    <div class="w-75 mx-auto">
+        <form class="row  justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div >
+            <input id="nameInput" type="text" name="Name" class="form-control" placeholder="Enter Your Name">
+            <span id="nameAlert" class="alert d-none alert-danger w-100 mt-2 d-block">
+                Special characters and numbers not allowed
+            </span>
+        </div>
+        </div>
+            <div class="col-md-6">
+                <div >
+                    <input id="emailInput" name="email" type="email" class="form-control " placeholder="Enter Your Email">
+            <span id="emailAlert" class="alert d-none alert-danger w-100 mt-2 d-block">
+                Email not valid *exemple@yyy.zzz
+            </span>
+        </div>
+        </div>
+            <div class="col-md-6">
+                <div >
+                    <input id="phoneInput" name="Phone" type="text" class="form-control " placeholder="Enter Your Phone">
+            <span id="phoneAlert" class="alert d-none alert-danger w-100 mt-2 d-block">
+                Enter valid Phone Number start with 011 or 012.
+            </span>
+        </div>
+        </div>
+            <div class="col-md-6">
+                <div >
+                    <input id="ageInput" name="age" type="number" class="form-control " placeholder="Enter Your Age">
+            <span id="ageAlert" class="alert d-none alert-danger w-100 mt-2 d-block">
+                Enter valid age
+            </span>
+        </div>
+        </div>
+            <div class="col-md-6">
+                <div >
+                    <input id="passwordInput" name="password" type="password" class="form-control" placeholder="Enter Your Password">
+            <span id="passwordAlert" class="alert d-none alert-danger w-100 mt-2 d-block">
+                Enter valid password *Minimum eight characters, at least one letter and one number:*
+            </span>
+        </div>
+        </div>
+            <div class="col-md-6">
+                <div >
+                    <input id="re-PasswordInput" name="re-password" type="password" class="form-control " placeholder="Repassword">
+            <span id="re-passwordAlert" class="alert d-none alert-danger w-100 mt-2 d-block">
+                Enter valid repassword 
+            </span>
+            
+        </div>
+        </div>
+            <div class="col-md-12">
+                <div class="text-center">
+                    <button id="submitBtn" class="btn btn-outline-danger px-2 mt-3">Submit</button>
+            
+        </div>
+        </div>
+    </form>
+</div>
+</section>
+</main>
+   
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
